@@ -1,0 +1,50 @@
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    min-height: 250px;
+    margin-top: 130px;
+    background-image: url(../img/contact-us.png);
+    background-repeat: no-repeat;
+    background-size: auto 250px;
+
+    @media (min-width: $desktop-width) {
+        background-image: url(../img/contact-us.png);
+        background-size: 100% auto;
+    }
+    
+}
+
+.contact-us__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+}
+
+.contact-us__heading {
+    font-size: 36px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+
+    @media (min-width: $desktop-width) {
+       font-size: 44px;       
+    }
+}
+
+.contact-us__text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    width: 80%;
+    padding: 0 1em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: transparentize($color: #fff, $amount: 0.4);
+
+    @media (min-width: $desktop-width) {
+       font-size: 20px;    
+       line-height: 30px;   
+    }
+}

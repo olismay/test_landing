@@ -1,0 +1,75 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    min-height: 1100px;
+    background-image: url(../img/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+     @media (min-width: $desktop-width) {
+        justify-content: center;
+        background-image: url(../img/Rectangle.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        min-height: 768px;
+    }
+}
+
+.intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 425px;
+    width: 69%;
+    margin: 0.5em auto 0;
+}
+
+.intro__heading {
+    font-family: 'Galien', 'Arial', sans-serif;
+    font-size: 44px;
+    line-height: 54px;    
+    letter-spacing: 0.02em;
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+
+    @media (min-width: $desktop-width) {
+        font-size: 64px;
+        line-height: 74px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.intro__content {
+    max-width: 425px;
+    font-weight: 300;    
+    letter-spacing: 0.05em;
+    color: transparentize($color: $blue01, $amount: 0.4);
+}
+
+.intro__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    min-height: 56px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    margin-top: 2.1em;
+    margin-bottom: 1.5em;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    background-color: $blue04;
+}
+
+.intro__link:hover {
+    background-color: saturate($color: $blue04, $amount: 15%);
+}
+
+.intro__link:active {
+    background-color: desaturate($color: $blue04, $amount: 25%);
+}

@@ -1,0 +1,73 @@
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 800px;
+    margin-top: 2em;
+}
+
+.details__img {
+    width: 300px;
+    height: 181px;
+    margin-left: 0.5em;
+}
+
+.details__content {
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.details__heading {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.details__text {
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    color: transparentize($color: $blue01, $amount: 0.4);
+}
+
+.details__wrap:last-of-type .details__text {
+    letter-spacing: 0.05em;
+}
+
+.details__wrap:last-of-type {
+    padding-top: 0.5em;
+}
+
+.details__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 107px;
+}
+
+.details__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 122px;
+}
+
+.details__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 68px;
+}
+
+.details__item {
+    display: flex;
+    align-items: center;
+}
+
+.details__svg-icon {
+    margin-right: 1em;
+}

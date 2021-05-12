@@ -1,0 +1,26 @@
+.page-body {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+    color: $blue01;
+    overflow-x: hidden;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: $bg;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}

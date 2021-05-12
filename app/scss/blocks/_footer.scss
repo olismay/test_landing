@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    min-height: 1400px;
+    width: 93%;
+    border-top-right-radius: 200px;
+    background-color: $blue05;
+
+    @media (min-width: $desktop-width) {
+        min-height: 869px;    
+    }
+}
+
+.footer__layout--contact {
+    position: static;
+}

@@ -1,0 +1,29 @@
+.social-networks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 214px;
+    flex-basis: 25%;
+}
+
+.social-networks__heading {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+.social-networks__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.social-networks__link {
+    text-decoration: none;
+    color: #fff;
+}

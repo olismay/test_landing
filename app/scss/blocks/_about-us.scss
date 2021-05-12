@@ -1,0 +1,29 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 214px;
+    align-items: flex-start;
+    flex-basis: 25%;
+}
+
+.about-us__heading {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+.about-us__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1em;
+    min-height: 150px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.about-us__link {
+    color: #fff;
+    text-decoration: none;
+}

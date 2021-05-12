@@ -1,0 +1,11 @@
+.contacts-copyright {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;   
+    color: transparentize($color: #fff, $amount: 0.6);
+
+     @media (min-width: $desktop-width) {
+        padding-left: 2em;
+        width: 69%;
+    }  
+}

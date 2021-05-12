@@ -1,0 +1,14 @@
+.main-nav__button {
+    width: 24px;
+    height: 3px;
+    margin-top: 0.6em;
+    box-shadow:
+    0 6px 0 0 $blue03,
+    0 12px 0 0 $blue03;
+    cursor: pointer;
+    background-color: $blue03;
+}
+
+.main-nav__button--contact {
+    margin-top: 0.5em;
+}

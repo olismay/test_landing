@@ -1,0 +1,24 @@
+.header {   
+    position: absolute; 
+    width: 100%;
+    top: 40px;
+    left: 0;
+    z-index: 2;
+    overflow-x: hidden;
+    min-height: 100px;
+
+    @media (min-width: $desktop-width) {
+        min-height: 48px;
+    }
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;   
+    margin: 0 auto;
+    width: 87.5%;
+}
+
+.header__layout--contact {
+    top: -90px;
+}

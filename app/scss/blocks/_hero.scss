@@ -1,0 +1,129 @@
+.hero {
+    position: absolute;
+    right: 45px;
+    bottom: 80px;
+    width: 280px;
+    height: 250px;
+    z-index: 4;
+
+    @media (min-width: $desktop-width) {
+        right: 45px;
+        bottom: 80px;
+        width: 680px;
+        height: 550px;
+    }
+}
+
+.hero__pic--bg {
+    width: 280px;
+    height: 250px;
+    position: relative;
+    left: 0;
+    z-index: 3;
+    top: 0;
+
+     @media (min-width: $desktop-width) {
+        width: 680px;
+        height: 550px;
+        position: relative;
+        left: 0;
+        z-index: 3;
+        top: 0;
+    }
+}
+
+.hero__pic--blue-bg {
+    position: absolute;
+    z-index: 5;
+    right: 8px;
+    width: 256px;
+    height: 185px;    
+    top: 30px;
+
+    @media (min-width: $desktop-width) {
+        position: absolute;
+        z-index: 5;
+        right: 8px;
+        width: 646px;
+        height: 450px;
+        top: 30px;
+    }
+}
+
+.hero__pic--man {
+    position: absolute;
+    z-index: 6;
+    top: 96px;
+    left: 40px;
+    width: 67px;
+    height: 120px;
+
+    @media (min-width: $desktop-width) {
+        top: 248px;
+        left: 90px;
+        width: 137px;
+        height: 232px;
+    }
+}
+
+.hero__pic--smart-home {
+    position: absolute;
+    z-index: 7;
+    right: -23px;
+    top: -45px;  
+    width: 142px;
+    height: 130px;
+
+    @media (min-width: $desktop-width) {
+        right: 22px;        
+        width: 292px;
+        height: 272px;
+    }
+}
+
+.hero__pic--woman {
+    position: absolute;
+    z-index: 8;
+    top: 20px;
+    right: -35px;
+    width: 77px;
+    height: 170px;
+
+    @media (min-width: $desktop-width) {
+        width: 179px;
+        height: 214px;
+        top: 168px;
+        right: -27px;
+    }
+}
+
+.hero__pic--group {
+    position: absolute;
+    z-index: 7;
+    top: 70px;
+    left: 80px;  
+    width: 140px;
+    height: 85px;
+    
+    @media (min-width: $desktop-width) {
+        top: 190px;
+        left: 185px;   
+        width: 280px;
+        height: 190px;
+    }
+}
+
+.hero__pic--smart-home:hover {    
+    transform: scale(0.7);
+    transition: all 1s ease-out;
+}
+
+.hero__pic--woman:hover {
+    transform: rotateZ(20deg);
+    transition: all 1s ease-out;
+}
+
+.hero__pic--man:hover {
+    transform: rotateZ(-10deg);
+    transition: all 1s ease-out;
+}

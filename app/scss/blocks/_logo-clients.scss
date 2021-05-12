@@ -1,0 +1,44 @@
+.logo-clients {
+    border-collapse: collapse;
+    min-height: 170px;
+    min-width: 90%;
+    margin: 0 auto 4em; 
+    
+    
+    @media (min-width: $desktop-width) {
+        min-height: 256px;
+        min-width: 940px;
+        margin: 0 auto 6em; 
+    }
+}
+
+.logo-clients__item {
+    font-size: 10px;
+    line-height: 26px;
+
+    @media (min-width: $desktop-width) {
+        font-size: 20px;
+        line-height: 46px;
+    }
+}
+
+.logo-clients__description:first-child .logo-clients__item:nth-child(-n+4) {    
+    border-bottom: 1px solid transparentize($color: #fff, $amount: 0.7);
+}
+
+.logo-clients__item:not(.logo-clients__description:last-child .logo-clients__item:last-child) {
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.logo-clients__description .logo-clients__item:not(:last-child) {
+    border-right: 1px solid transparentize($color: #fff, $amount: 0.7);
+}
+
+.logo-clients__description:last-child .logo-clients__item:last-child {
+    cursor: pointer;
+    text-align: center;
+    background-color: transparentize($color: $blue01, $amount: 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
