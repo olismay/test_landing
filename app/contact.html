@@ -105,31 +105,34 @@
         </div>
         </div>
       </section>    
-     
-      <form class="form" action="#" method="POST">
+   
+      <form class="form" action="" method="POST">
 
        <div class="form__wrapper"> 
         <h3 class="form__heading">Send Us Message</h3>  
         <div class="form__content">
         <div class="form__item">  
           <label class="form__description" for="name" >Full Name</label>
-          <input class="form__input" type="text" name="name" placeholder="Your name" tabindex="0">
+          <input class="form__input" type="text" name="name" id="name" placeholder="Your name" tabindex="0">
+          <span class="form__error form__error--name"></span>
         </div>
 
         <div class="form__item">
           <label class="form__description" for="name">Email</label>
-          <input class="form__input" type="email" name="email" placeholder="Your email" tabindex="0">
+          <input class="form__input" type="text" name="email" id="email" placeholder="Your email" tabindex="0">
+          <span class="form__error form__error--email"></span>
         </div>
 
         <div class="form__item">
           <label class="form__description" for="message" >Message</label>
-          <textarea class="form__text" rows="5" name="message" placeholder="Your message" tabindex="0">
-          </textarea>  
+          <textarea class="form__text form__text--message" rows="5" name="message" id="message" placeholder="Your message" tabindex="0"></textarea>  
+          <span class="form__error form__error--message"></span>
         </div>
         </div> 
         <button class="form__button" type="submit">Submit</button>
        </div> 
-      </form>  
+      </form> 
+     
     </div>
 
       <div class="map">
@@ -148,9 +151,9 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p>
           </div>
-          <a class="collab__link" href="#"> 
+          <button class="collab__button" type="button"> 
             Let's Talk     
-          </a>    
+          </button>    
         </section>    
         <div class="contacts">
           <div class="contacts__wrapper">
@@ -215,6 +218,16 @@
             2019 © Afrianska. All rights reserved.
           </div>  
         </div>  
-    </footer>    
+    </footer>   
+   
+    <div class="overlay">
+      <div class="overlay__content">
+        <div class="overlay__wrapper">
+          <p class="overlay__text">Your message<br> succesfully sent</p>
+        </div>  
+      </div> 
+    </div> 
+    
+    <script src="js/form.js"></script>
   </body>
 </html>

@@ -109,6 +109,7 @@
     background-color: $blue02;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
+    border: 0px;
 
     @media (min-width: $desktop-width) {
         min-width: 428px;
@@ -148,4 +149,53 @@
     @media (min-width: $desktop-width) {
         min-height: 460px;
     }
+}
+
+.form__layout--modal {    
+    position: relative;
+    z-index: 99999;
+    top: 10px;
+    left: 10%;
+    min-width: 300px;
+    margin: 0 auto;
+    height: 600px;
+
+    @media (min-width: $desktop-width) {
+        top: 50%;        
+        left: 50%;        
+        transform: translate(-50%, -50%);
+        min-width: 540px;  
+        height: 760px;
+    }
+}
+
+.form__layout--modal .form__button {   
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 2.5em;
+    }
+    
+}
+
+input::-webkit-input-placeholder {
+    color: transparentize($color: $blue01, $amount: 0.8);
+}
+
+input::-moz-input-placeholder {
+    color: transparentize($color: $blue01, $amount: 0.8);
+}
+
+.form__text::-webkit-textarea-placeholder {
+    color: transparentize($color: $blue01, $amount: 0.8);
+}
+
+.form__text::-moz-textarea-placeholder {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    color: transparentize($color: $blue01, $amount: 0.8);
+}
+
+::placeholder {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 14px;
+    color: transparentize($color: $blue01, $amount: 0.8);
 }

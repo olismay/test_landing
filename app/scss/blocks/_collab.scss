@@ -49,7 +49,8 @@
     }
 }
 
-.collab__link {
+.collab__button {
+    font-family: 'Gilroy', 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,19 +60,23 @@
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));    
+    letter-spacing: 0.04em;
+    box-sizing: border-box;
     border-radius: 10px;
+    border: 0px;
     background-color: $blue04;
 
     @media (min-width: $desktop-width) {
         align-self: center;      
+        min-width: 220px;
     }
 }
 
-.collab__link:hover {
+.collab__button:hover {
     background-color: saturate($color: $blue04, $amount: 15%);
 }
 
-.collab__link:active {
+.collab__button:active {
     background-color: desaturate($color: $blue04, $amount: 25%);
 }
